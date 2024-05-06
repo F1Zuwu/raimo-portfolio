@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Plaster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rammetto+One&display=swap');
+
+.uninteractable {
+  pointer-events: none;
+}
+
+.news-container img {
+  -webkit-transition-duration: 0.2s;
+  height: 0px;
+}
+
+.news-container:hover img {
+  -webkit-transition-duration: 0.2s;
+  height: 324px;
+}
+
+.news-container:hover {
+  -webkit-transition-duration: 0.2s;
+  background-color: #2c2c2c;
+}
+
+.news-container {
+  -webkit-transition-duration: 0.2s;
+  background-color: #0f0f0f;
+}
+
+.calc-heigh {
+  height: calc(100vh - 48px);
+}
+
+.anim-smaller-hover img  {
+  -webkit-transition-duration: 0.2s;
+  transform: scale(1);
+}
+
+.anim-smaller-hover:hover img {
+  -webkit-transition-duration: 0.2s;
+  transform: scale(0.8);
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: #232323;
+}
+
+.plaster-regular {
+  font-family: "Plaster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.linear {
+  background-size: 100% 100%;
+background-position: 0px 0px;
+  background-image: radial-gradient(100% 100% at 0% 50%, #232323 0%, #FF700000 100%);
+}
+
+.rammetto-one-regular {
+  font-family: "Rammetto One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.b-1 {background-color: #202020;}
+.b-2 {background-color: #232323;}
+.b-3 {background-color: #2c2c2c;}
+
+
+.t-p-1 {color: #00A6E1;}
+.t-p-2 {color: #00A6E1;}
+
+.glitch {
+  animation: glitch 3s linear infinite alternate-reverse;
+}
+
+@keyframes glitch {
+  from {
+    text-shadow: red 0px 0, cyan 0px 0;
+  }
+  to {
+    text-shadow: red -3px 0, cyan 3px 0;
+  }
+}
+
+.glitch-box {
+  box-shadow: red -3px 0, cyan 3px, 0;
+}
+
+.img-filter {
+  filter: contrast(25%), saturate(0%);
+}
+
+.scrollup-deco {
+  height: 100%;
+  width: 36px;
+  background-repeat: repeat;
+  animation: scroll 20s linear infinite alternate;
+  background-image: url("./assets/text.png");
+}
+
+
+@keyframes scroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -100%;
+  }
+}
+
+.hover-anim-news-panel {
+  -webkit-transition-duration: 0.2s;
+  box-shadow: red -3px 0, cyan 3px, 0;
+  padding: 0px;
+}
+
+.hover-anim-news-panel img {
+  -webkit-transition-duration: 0.2s;
+  filter: grayscale(100%);
+}
+
+.hover-anim-news-panel:hover {
+  -webkit-transition-duration: 0.2s;
+  box-shadow: red -3px 0, cyan 3px, 0;
+  padding: 8px;
+}
+
+.hover-anim-news-panel:hover img {
+  -webkit-transition-duration: 0.2s;
+  box-shadow: red -3px 0, cyan 3px, 0;
+  filter: grayscale(0%);
+}
