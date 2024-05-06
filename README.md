@@ -15,5 +15,9 @@
 </p>
 <h2>Firebase</h2>
 <p>App on ühendatud firebaseiga ja võtab sealt andmebaasist infot /news lehekülje jaoks</p>
+<h2>Kuidas kasutada</h2>
+<p>Vaja läheb node.js ning tõmmata koik vajalikud package'id kasutades `npm i` ja siis tööle panna scriptiga `npm run-script start`</p>
 <h2>Trello</h2>
 <a href="https://trello.com/b/b9iJld7O/portfoolio">Trello</a>
+
+<p>Looja: Raimo Kivi</p>
